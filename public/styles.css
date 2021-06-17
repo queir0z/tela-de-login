@@ -1,0 +1,128 @@
+:root {
+    --blue-light: #328CC1;
+    --blue-dark: #0B3C5D;
+    --yellow: #D9B310;
+    --grey: #1D2731;
+    --grey-light: #808080;
+    --text-color: black;
+}
+
+* {
+    font-family: var(--fontFamily-primary);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+font-face {
+    font-family: MinhaFonte;
+    src: url(./fonts/Maillove.otf);
+}
+
+h1 {
+    font-family: 'MinhaFonte', Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Caveat', 'Great Vibes', cursive;
+    /*font-family: 'Caveat', cursive;*/
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: var(--grey);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 30%;
+    height: 60%;
+    background-color: var(--yellow);
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container {
+    display: grid;
+    align-items: center;
+}
+
+.title-login {
+    margin-bottom: 20%;
+}
+
+
+/* CSS DO INPUT */
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--grey-light);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--grey-light);
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-color: var(--grey);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: 700;
+}
+
+
+/* reset input */
+
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}

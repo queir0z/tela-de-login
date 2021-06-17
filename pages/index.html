@@ -2,38 +2,36 @@
 <html>
 
 <head>
-    <title>MINHA PRIMEIRA PAGINA</title>
+    <title>Login Page</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/Style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&family=Great+Vibes&display=swap">
-
-    <style>
-        h1 {
-            font-family: 'MinhaFonte', Helvetica, sans-serif;
-        }
-        
-        p {
-            font-family: 'Caveat', 'Great Vibes', cursive;
-            /*font-family: 'Caveat', cursive;*/
-        }
-        
-        @font-face {
-            font-family: MinhaFonte;
-            src: url(./fonts/Maillove.otf);
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 
 
 </head>
 
 <body>
-    <h1>Lorem Ipsum is simply</h1>
+    <div class="container">
+        <div class="box">
+            <div class="title-login">
+                <h1 class="title">Login</h1>
+            </div>
+            <div class="input-container">
+                <div class="form__group field">
+                    <input name="e-mail" class="form__field" placeholder="E-mail" id="e-mail" type="text" required>
+                    <label class="form__label" for="e-mail">E-mail</label>
+                </div>
+                <div class="form__group field">
+                    <input name="password" class="form__field" placeholder="Senha" id="password" type="text" required>
+                    <label class="form__label" for="password">Senha</label>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="button">Entrar</button>
+            </div>
+        </div>
+    </div>
 
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
-        has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-        publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-
-    <a href="https://www.google.com/">Meu link</a>
 </body>
 
 
